@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.left-box {
+  width: 40%;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Underline ingredients on hover */
+form label:hover {
+  text-decoration: underline;
+}
+
+.right-box {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 30px;
+  background-color: #2E51A2; /* Change button color to blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1A328D; /* Darker blue on hover */
+}
+
+#recipeResults {
+  padding: 20px 0;
+  max-height: 400px; /* Set a maximum height for the results box */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  border: 1px solid #ccc; /* Add a border to clearly define the box */
+  border-radius: 10px;
+  margin-top: 20px; /* Add some margin at the top */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
